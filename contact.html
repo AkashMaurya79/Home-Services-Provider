@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body><header>
+  <div class="navbar">
+      <div class="nav-logo ">
+        <div class="logo"></div>
+      </div>
+      <div class="nav-search">
+          <select class="search-select">
+            <option>all</option>
+          </select>
+          <input placeholder="search" class="search-input">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+      </div>
+      <div class="nav-signin ">
+        <P class="nav-first">Login</P>
+        <div class="ad-icon" id="adicon">
+          <i class="fa-solid fa-circle-user" id="icont"></i>      
+          <p class="nav-second">Register</p>
+        </div>
+     </div>
+  </div>    
+  
+  <div class="panel">
+    <input type="checkbox" id="check" />
+    <div class="panel-menu" id="panelMenu">
+      <label for="check">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </div>
+
+    <div class="panel-ops">
+      <div class="cross">
+        <label for="check">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+      </div>
+      <div class="all">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="buynow.html">Buy Now</a></li>           
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="serviceprovider.html">Your Account</a></li>
+          <li><a href="customservice.html">Customer Services</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul> 
+      </div>
+      <div class="media">
+        <ul class="social-media">
+          <a href="https://www.facebook.com/profile.php?id=100026966812718"><i class="fa-brands fa-facebook" id="face"></i></a>
+          <a href=" https://x.com/Sachink705474?t=zDKi8URRUQGYRsqOzqSjaw&s=08 "><i class="fa-brands fa-twitter" id="twit"></i></a>
+          <a href=" https://www.instagram.com/invites/contact/?igsh=f80xxsm6yhn8&utm_content=keqqfa0 "><i class="fa-brands fa-instagram" id="insta"></i></a>
+          <a href="https://www.linkedin.com/in/sachin-patel-063552287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fa-brands fa-linkedin" id="linked"></i></a>
+        </ul>
+      </div>
+    </div>
+</header>
+
+  <div class="great">
+    <h1>Contact Us</h1>
+  </div>
+  <main class="container">    
+    <p>We'd love to hear from you! Reach out to us for any questions, feedback, or support.</p>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="foot-panel4">
+      <p>&copy; 2023 E-Commerce Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

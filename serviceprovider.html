@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Service Provider Registration</title>
+  <meta name="description" content="Register as a home maintenance service provider." />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f6fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+      <div class="navbar">
+      <div class="nav-logo ">
+        <div class="logo"></div>
+      </div>
+      <div class="nav-search">
+          <select class="search-select">
+            <option>all</option>
+          </select>
+          <input placeholder="search" class="search-input">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+      </div>
+      <div class="nav-signin ">
+        <P class="nav-first">Login</P>
+        <div class="ad-icon" id="adicon">
+          <i class="fa-solid fa-circle-user" id="icont"></i>      
+          <p class="nav-second">Register</p>
+        </div>
+     </div>
+  </div>    
+  
+  <div class="panel">
+    <input type="checkbox" id="check" />
+    <div class="panel-menu" id="panelMenu">
+      <label for="check">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </div>
+
+    <div class="panel-ops">
+      <div class="cross">
+        <label for="check">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+      </div>
+      <div class="all">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="buynow.html">Buy Now</a></li>           
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="#">Your Account</a></li>
+          <li><a href="customservice.html">Customer Services</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul> 
+      </div>
+      <div class="media">
+        <ul class="social-media">
+          <a href="https://www.facebook.com/profile.php?id=100026966812718"><i class="fa-brands fa-facebook" id="face"></i></a>
+          <a href=" https://x.com/Sachink705474?t=zDKi8URRUQGYRsqOzqSjaw&s=08 "><i class="fa-brands fa-twitter" id="twit"></i></a>
+          <a href=" https://www.instagram.com/invites/contact/?igsh=f80xxsm6yhn8&utm_content=keqqfa0 "><i class="fa-brands fa-instagram" id="insta"></i></a>
+          <a href="https://www.linkedin.com/in/sachin-patel-063552287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fa-brands fa-linkedin" id="linked"></i></a>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Service Provider Registration</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+
+      <fieldset id="datafield">
+        <legend>Personal / Company Details</legend>
+        <div class="grid">
+          <div>
+            <label for="name">Full Name / Company Name *</label>
+            <input class="agree" type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email *</label>
+            <input class="agree" type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone Number *</label>
+            <input class="agree" type="tel" id="phone" name="phone" required pattern="^[0-9]{10}$" placeholder="10-digit number">
+          </div>
+          <div>
+            <label for="altPhone">Alternate Phone</label>
+            <input class="agree" type="tel" id="altPhone" name="altPhone" pattern="^[0-9]{10}$">
+          </div>
+        </div>
+        <label for="address">Address *</label>
+        <input class="agree" type="text" id="address" name="address" required>
+      </fieldset>
+
+      <fieldset id="datafield">
+        <legend>Professional Information</legend>
+        <div class="grid">
+          <div>
+            <label for="serviceType">Service Category *</label>
+            <select id="serviceType" name="serviceType" required>
+              <option value="">Select…</option>
+              <option>Plumbing</option>
+              <option>Electrical</option>
+              <option>Appliance Repair & Installetion</option>
+              <option>Carpentry & Home Repair</option>
+              <option>Painting</option>
+              <option>Cleaning</option>
+              <option>Security</option>
+              <option>Pest Control</option>
+              <option>Gardening/Lawn</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="experience">Years of Experience *</label>
+            <input class="agree" type="number" id="experience" name="experience" min="0" required>
+          </div>
+          <div>
+            <label for="license">License / Certification No.</label>
+            <input class="agree" type="text" id="license" name="license">
+          </div>
+        </div>
+        <label for="specialization">Specialization / Skills</label>
+        <textarea id="specialization" name="specialization" rows="3"></textarea>
+      </fieldset>
+
+      <fieldset id="datafield">
+        <legend>Availability & Rates</legend>
+        <div class="grid">
+          <div>
+            <label for="days">Working Days *</label>
+            <input class="agree" type="text" id="days" name="days" placeholder="e.g. Mon-Sat" required>
+          </div>
+          <div>
+            <label for="hours">Working Hours *</label>
+            <input class="agree" type="text" id="hours" name="hours" placeholder="e.g. 9am - 6pm" required>
+          </div>
+          <div>
+            <label for="emergency">Emergency Availability</label>
+            <select id="emergency" name="emergency">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div>
+            <label for="rate">Rate (₹ per hour)</label>
+            <input class="agree" type="number" id="rate" name="rate" min="0">
+          </div>
+          <div>
+            <label for="callout">Call-out Fee (₹)</label>
+            <input class="agree" type="number" id="callout" name="callout" min="0">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset id="datafield">
+        <legend>Uploads</legend>
+        <label for="idProof">ID Proof (PDF/Image) *</label>
+        <input class="agree" type="file" id="idProof" name="idProof" accept="image/*,.pdf" required>
+
+        <label for="certifications">Certifications (optional)</label>
+        <input class="agree" type="file" id="certifications" name="certifications" multiple accept="image/*,.pdf">
+
+        <label for="portfolio">Portfolio Photos</label>
+        <input class="agree" type="file" id="portfolio" name="portfolio" multiple accept="image/*">
+      </fieldset>
+
+      <fieldset id="datafield">
+        <legend>Consent</legend>
+        <label>
+          <input class="agree" type="checkbox" name="agree" required> I confirm that the details provided are true and I agree to the terms & conditions.
+        </label>
+      </fieldset>
+
+      <div style="text-align:center;">
+        <button type="submit" class="sbtn">Register</button>
+      </div>
+      <p class="note">Your information will be securely stored and used only for service provider verification.</p>
+    </form>
+  </div>
+  <footer>
+    <div class="foot-panel4r">
+      <p>&copy; 2023 E-Commerce Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
